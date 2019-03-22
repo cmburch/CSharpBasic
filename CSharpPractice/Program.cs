@@ -30,18 +30,28 @@ namespace CSharpPractice
 
             //explicit
 
-            int i = 1;
-            byte b = i; //won't compile
+            //int i = 1;
+            //byte b = i; //won't compile
 
 
             //example of casting
             float f = 1.0f;
-            int i = (int)f;
+            int x = (int)f;
 
             //NON - compatible types casting
-            string s = “1”;
-            int i = Convert.ToInt32(s);
+            string s = "1";
+            int y = Convert.ToInt32(s);
             int j = int.Parse(s);
+
+
+            ////////////////////Increment
+            ////postfix
+            //int a = 1;
+            //int b = a++;  //a = 2, b=1;
+
+            ////pretfix
+            //int a = 1;
+            //int b = ++a;  //a = 2, b=2;
         }
     }
 }
