@@ -7,7 +7,7 @@ namespace CSharpPractice
         public static void Main(string[] args)
         {
            Console.WriteLine("Hello World!");
-            byte number = 2;
+            byte number = 5;
             int count = 10;
             float totalPrice = 20.15f;
             char letter = 'H';
@@ -15,6 +15,33 @@ namespace CSharpPractice
             bool isWorking = true;
 
             Console.Write(number);
+
+            //below is a format string
+            Console.WriteLine("{0} {1}",byte.MinValue,byte.MaxValue);
+
+
+
+            //type conversion 
+
+            //implicit
+
+            int b = 1;
+            int i = b;
+
+            //explicit
+
+            int i = 1;
+            byte b = i; //won't compile
+
+
+            //example of casting
+            float f = 1.0f;
+            int i = (int)f;
+
+            //NON - compatible types casting
+            string s = “1”;
+            int i = Convert.ToInt32(s);
+            int j = int.Parse(s);
         }
     }
 }
