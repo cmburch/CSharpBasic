@@ -1,8 +1,8 @@
 ﻿using System;
 
 namespace CSharpPractice
-{
-
+{   
+    //remove this into another class called person
     //creating a class
     public class Person
     {

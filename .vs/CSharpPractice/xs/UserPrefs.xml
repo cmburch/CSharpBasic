@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{ADE27451-BD8B-42B5-83A9-01BDB01DB8D2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CSharpPractice Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CSharpPractice/Calculator.cs">
     <Files>
-      <File FileName="CSharpPractice/Program.cs" Line="9" Column="11" />
+      <File FileName="CSharpPractice/Program.cs" Line="5" Column="5" />
       <File FileName="CSharpPractice Status" />
+      <File FileName="CSharpPractice/Calculator.cs" Line="2" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CSharpPractice" expanded="True">
             <Node name="CSharpPractice" expanded="True">
-              <Node name="Properties" selected="True" />
+              <Node name="Calculator.cs" selected="True" />
             </Node>
           </Node>
         </State>
