@@ -2,6 +2,19 @@
 
 namespace CSharpPractice
 {
+
+    //creating a class
+    public class Person
+    {
+        public string FirstName;
+        public string LastName;
+
+        public void Introduce()
+        {
+            Console.WriteLine("My name is " + FirstName + " " + LastName);
+        }
+    }
+
     class MainClass
     {
         public static void Main(string[] args)
@@ -52,6 +65,16 @@ namespace CSharpPractice
             ////pretfix
             //int a = 1;
             //int b = ++a;  //a = 2, b=2;
+
+
+            //practice: create a new Person 
+
+            var john = new Person();
+            john.FirstName = "john";
+            john.LastName = "hank";
+            john.Introduce();
+             
         }
     }
+
 }
