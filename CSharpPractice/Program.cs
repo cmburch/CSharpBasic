@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CSharpPractice.Math;
 
 namespace CSharpPractice
@@ -6,9 +7,43 @@ namespace CSharpPractice
 
     class MainClass
     {
+
         public static void Main(string[] args)
         {
-           Console.WriteLine("Hello World!");
+            //create a list and remove all of the un-unique values
+            //List<int> numbers = new List<int>() { 1, 2, 3, 4 };
+
+            List<int> numbers1 = new List<int>() { 1, 3, 3, 4, 2, 1 };
+            List<int> unique = new List<int>();
+
+            foreach (var number1 in numbers1)
+            {
+                if (!unique.Contains(number1)) 
+                {
+                    unique.Add(number1);
+                }
+            }
+            //return the unique array
+
+
+            //creating new lIst
+            var numbers = new List<int> { 1, 2, 3, 4 };
+            numbers.Add(1);
+            numbers.AddRange(new int[3] {5,6,7});
+            numbers.IndexOf(1);
+
+
+            string fullname1 = "homer simpson";
+            var name = fullname1.Split(' '); // return is a string array [homer,simpson] 
+            Console.WriteLine(name[0]); //homer
+            Console.WriteLine(name[1]); //simpson
+
+            foreach (var item in numbers)
+            {   
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine("Hello World!");
             byte number = 5;
             int count = 10;
             float totalPrice = 20.15f;
@@ -89,7 +124,29 @@ namespace CSharpPractice
         ShippingMethod method = ShippingMethod.Express;
 
 
+
+ 
+
+
+
     }
+}
+//create a reverse method
+public static string ReverseName(string name)
+    {
+        //create an array of char from the name;
+        var array = new char[name.Length];
+        for (int i = name.Length; i > 0; i--)
+        {
+            array[name.Length - i] = name[i - 1];
+        }
+        var reversed = new string(array);
+        return reversed;
     }
 
+
 }
+
+name = two //length = 3  i = 3
+
+    //array[0] = 
