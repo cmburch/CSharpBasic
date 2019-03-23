@@ -1,19 +1,8 @@
 ﻿using System;
+using CSharpPractice.Math;
 
 namespace CSharpPractice
 {   
-    //remove this into another class called person
-    //creating a class
-    public class Person
-    {
-        public string FirstName;
-        public string LastName;
-
-        public void Introduce()
-        {
-            Console.WriteLine("My name is " + FirstName + " " + LastName);
-        }
-    }
 
     class MainClass
     {
@@ -73,7 +62,22 @@ namespace CSharpPractice
             john.FirstName = "john";
             john.LastName = "hank";
             john.Introduce();
-             
+
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(5, 4);
+            Console.WriteLine(result);
+
+            /////////Arrays//////////////
+            //1st way of declaring array
+            int[] numbers = new int[3];
+            numbers[0] = 1;
+            numbers[1] = 2;
+            numbers[2] = 3;
+
+            //2nd way of declaring array
+            int[] numbers1 = new int[3] {1,2,3};
+            //////////
+
         }
     }
 
