@@ -75,10 +75,21 @@ namespace CSharpPractice
             numbers[2] = 3;
 
             //2nd way of declaring array
-            int[] numbers1 = new int[3] {1,2,3};
+             int[] numbers1 = new int[3] {1,2,3};
             //////////
 
-        }
+            ///////////ENUMS
+            public enum ShippingMethod 
+            {
+                RegularAirMail = 1,
+                RegisteredAirMail = 2,
+                Express = 3 
+            }
+
+        ShippingMethod method = ShippingMethod.Express;
+
+
+    }
     }
 
 }
